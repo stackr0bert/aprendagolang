@@ -2,7 +2,10 @@ package main
 
 import "fmt"
 
+var nome string
+
 func main(){
-fmt.Printf("Hello, World!\n")
+nome = "r0bert"
+fmt.Println("Hello", nome, "!")
 
 }
