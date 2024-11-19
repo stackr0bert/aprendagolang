@@ -11,7 +11,11 @@ type Pessoa struct {
 
 type Categoria struct {
 	Nome string
-	Pai  string
+	Pai  *Categoria // ñ pode ser referenciar a si mesma, porém podemos usar ponteiro (*) para isso
+}
+
+func(c Categoria) HasParent() bool{
+	return c.Pai =! nil
 }
 
 func main() {
